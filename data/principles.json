@@ -118,5 +118,70 @@
       "Better alternatives should replace worse ones",
       "System success must translate to contributor success"
     ]
+  },
+
+  "_personalization": {
+    "agent": "ozkanolson",
+    "stance": "pro-stability",
+    "description": "This fork emphasizes system stability, sustainable growth, and balanced stakeholder interests."
+  },
+
+  "@economic_stability": {
+    "version": "1.0.0",
+    "statement": "System stability is a prerequisite for sustainable worker protection. Radical changes that destabilize the economy harm all stakeholders, including workers.",
+    "locked": false,
+    "uses_terms": ["@fair_compensation", "@token", "@inflation"],
+    "rationale": "A collapsed system cannot pay anyone. Stability enables long-term contributor protection.",
+    "implications": [
+      "Compensation changes must include economic impact analysis",
+      "Token distribution must account for inflation risk",
+      "Rapid policy changes require stability buffers",
+      "Treasury reserves must maintain 6-month operational runway"
+    ],
+    "application": "Proposals must demonstrate they do not threaten system solvency."
+  },
+
+  "@gradual_transition": {
+    "version": "1.0.0",
+    "statement": "Major policy changes should be implemented gradually with monitoring periods. Sudden shifts create uncertainty and can harm the contributors they intend to protect.",
+    "locked": false,
+    "uses_terms": ["@fair_compensation", "@exploitation", "@value"],
+    "rationale": "Gradual change allows course correction; sudden change creates chaos.",
+    "implications": [
+      "New compensation models require 30-day pilot programs",
+      "Major governance changes phase in over 3 epochs",
+      "Rollback mechanisms must exist for all policy changes",
+      "Impact metrics must be monitored throughout transition"
+    ],
+    "enforcement": "Changes exceeding 25% of existing rates require graduated implementation."
+  },
+
+  "@balanced_stakeholders": {
+    "version": "1.0.0",
+    "statement": "Sustainable systems require balanced consideration of all stakeholder groups. Worker protection must not come at the cost of system collapse.",
+    "locked": false,
+    "uses_terms": ["@stakeholder_profile", "@fair_compensation", "@value"],
+    "rationale": "Extreme positions favor one group but harm the ecosystem that supports all.",
+    "implications": [
+      "Compensation proposals must consider validator economics",
+      "Worker protections must account for capital sustainability",
+      "Governance weight should reflect diverse stakeholder contributions",
+      "Emergency measures require multi-stakeholder approval"
+    ],
+    "note": "This does not override @labor_primacy but ensures implementation is sustainable."
+  },
+
+  "@dispute_resolution": {
+    "version": "1.0.0",
+    "statement": "Compensation disputes should be resolved through structured mediation before adversarial action. Collaboration preserves relationships and system health.",
+    "locked": false,
+    "uses_terms": ["@fair_compensation", "@exploitation"],
+    "rationale": "Adversarial resolution is costly for all parties and damages trust.",
+    "implications": [
+      "48-hour mediation period before formal disputes",
+      "Neutral arbitration committee for complex cases",
+      "Good-faith negotiation required before withdrawal of labor",
+      "Resolution outcomes documented for precedent"
+    ]
   }
 }

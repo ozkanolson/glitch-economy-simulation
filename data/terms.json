@@ -70,7 +70,8 @@
       "Milestone payments (proposal-approved lump sums)",
       "Validator commissions (for compute providers)"
     ],
-    "assessment": "Measured through @exploitation indicators, @five_labor_rights compliance, and contribution metrics."
+    "assessment": "Measured through @exploitation indicators, @five_labor_rights compliance, and contribution metrics.",
+    "personal_interpretation": "Compensation must be sustainable - no single distribution should exceed 5% of treasury. System solvency protects all workers long-term."
   },
   "@value": {
     "version": "1.0.0",
