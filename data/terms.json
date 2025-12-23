@@ -232,25 +232,49 @@
     "tiers": {
       "tier_A_on_chain": {
         "description": "Cryptographically verifiable on Cosmos chain via transaction hash",
-        "examples": ["GPU compute logs (validator blocks)", "Signed commits (tx memo)", "Transaction processing (block height)"],
+        "examples": [
+          "GPU compute logs (validator blocks)",
+          "Signed commits (tx memo)",
+          "Transaction processing (block height)"
+        ],
         "verification": "Query via RPC endpoint or block explorer"
       },
       "tier_A_signed": {
         "description": "Digitally signed with wallet key and auditable",
-        "examples": ["Code contributions (signed tx)", "Deliverable submissions (IPFS hash in tx memo)"],
+        "examples": [
+          "Code contributions (signed tx)",
+          "Deliverable submissions (IPFS hash in tx memo)"
+        ],
         "verification": "Verify signature against glitch1... address"
       },
       "tier_B": {
         "description": "Institutionally verified via multi-sig attestation",
-        "examples": ["DAO attestation", "Validator set confirmation"],
+        "examples": [
+          "DAO attestation",
+          "Validator set confirmation"
+        ],
         "verification": "Multi-sig transaction from designated attestors"
       },
       "tier_C": {
         "description": "Self-reported with community attestation via governance vote",
-        "examples": ["Hours logged", "Task completion claims"],
+        "examples": [
+          "Hours logged",
+          "Task completion claims"
+        ],
         "verification": "x/gov proposal with quorum approval"
       }
     },
     "reward_trigger": "Valid proof triggers @reward_allocation via x/distribution or x/bank MsgSend"
+  },
+  "@treasury_rules": {
+    "no_retroactive_dilution_rule": {
+      "definition": "Token dilution or supply changes SHALL NOT apply retroactively to already-earned contributor compensation"
+    },
+    "prospective_only_treasury_adjustments_rule": {
+      "definition": "Any token supply modifications for treasury needs apply ONLY to future earnings/distributions"
+    },
+    "vested_compensation_lock_rule": {
+      "definition": "Once compensation is earned/vested, its proportional value is protected from dilution events"
+    }
   }
 }
