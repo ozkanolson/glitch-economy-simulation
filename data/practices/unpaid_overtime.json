@@ -1,0 +1,149 @@
+{
+  "_meta": {
+    "type": "practice_profile",
+    "version": "1.0.0",
+    "created": "2024-12-22",
+    "updated": "2024-12-22",
+    "status": "accepted",
+    "proposal": "Initial seed data"
+  },
+
+  "name": "Unpaid Overtime",
+  "description": "Requiring or expecting workers to perform labor beyond contracted hours without additional compensation. Includes implicit expectations, deadline pressure, and cultural normalization of overwork.",
+
+  "target_stakeholders": ["worker"],
+  "industry": "All sectors, particularly prevalent in tech, finance, professional services, and gig economy",
+
+  "economic_impacts": [
+    {
+      "impact": "Direct token theft",
+      "evidence": "Hours worked exceed hours compensated in GLITCH tokens, violating fair exchange principle",
+      "source": "Economic Policy Institute (2021) Wage Theft Report"
+    },
+    {
+      "impact": "Burnout and health deterioration",
+      "evidence": "Chronic overwork linked to cardiovascular disease, mental health issues, and reduced life expectancy",
+      "source": "WHO/ILO (2021) Long working hours study"
+    },
+    {
+      "impact": "Work-life imbalance",
+      "evidence": "Reduced time for family, rest, personal development; contributes to social isolation",
+      "source": "Pfeffer, J. (2018) Dying for a Paycheck"
+    },
+    {
+      "impact": "Productivity paradox",
+      "evidence": "Overwork reduces per-hour productivity; net value extraction diminishes while harm increases",
+      "source": "Pencavel, J. (2014) The Productivity of Working Hours. IZA Discussion Paper"
+    },
+    {
+      "impact": "Power imbalance reinforcement",
+      "evidence": "Normalizes employer extraction; workers who resist face career penalties",
+      "source": "Graeber, D. (2018) Bullshit Jobs"
+    }
+  ],
+
+  "five_rights_assessment": {
+    "freedom_from_token_theft": {
+      "status": "VIOLATED",
+      "notes": "Work performed without token compensation is definitional theft"
+    },
+    "freedom_from_unsafe_conditions": {
+      "status": "VIOLATED",
+      "notes": "Chronic overwork causes documented health harm"
+    },
+    "freedom_from_exploitation": {
+      "status": "VIOLATED",
+      "notes": "Value extracted without fair exchange; coercion through implicit expectations"
+    },
+    "freedom_to_organize": {
+      "status": "PARTIAL",
+      "notes": "Workers often cannot refuse without career consequences; collective action can address"
+    },
+    "freedom_from_discrimination": {
+      "status": "PARTIAL",
+      "notes": "Disproportionately affects those with caregiving responsibilities; impacts vary by role"
+    }
+  },
+
+  "rights_violated": 3,
+  "rights_partial": 2,
+  "rights_met": 0,
+
+  "economic_verdict": "EXPLOITATIVE",
+
+  "verdict_justification": "Unpaid overtime violates 3 of 5 labor rights outright. The practice causes documented harm including token theft, health deterioration, and work-life destruction. No essential benefit justifies this level of harm (work can be compensated fairly in GLITCH tokens). Per @proportionality, employer convenience and cost reduction do not override contributor welfare. Per @labor_primacy, corporate culture and tradition cannot justify exploitation.",
+
+  "violations": [
+    "Freedom from token theft",
+    "Freedom from unsafe conditions",
+    "Freedom from exploitation"
+  ],
+
+  "recommendations": [
+    "Eliminate unpaid overtime entirely",
+    "Compensate all hours worked at agreed rate or higher for overtime",
+    "Implement hard working hour limits with enforcement",
+    "Create right-to-disconnect policies",
+    "Make overtime genuinely voluntary with no career penalty for refusal"
+  ],
+
+  "alternatives": [
+    {
+      "name": "Paid overtime",
+      "improvement": "All hours compensated, typically at premium rate",
+      "limitations": "Still enables overwork if not capped"
+    },
+    {
+      "name": "Comp time",
+      "improvement": "Extra hours banked as future time off",
+      "limitations": "Workers may never use accrued time; doesn't address burnout"
+    },
+    {
+      "name": "Project-based compensation",
+      "improvement": "Pay for deliverables rather than hours; incentivizes efficiency",
+      "limitations": "Can lead to scope creep; requires clear deliverable definition"
+    },
+    {
+      "name": "Four-day work week",
+      "improvement": "Reduces total hours while maintaining pay; proven productivity gains",
+      "limitations": "Requires organizational commitment; not all roles adaptable"
+    }
+  ],
+
+  "regulatory_status": {
+    "EU": "Working Time Directive caps hours; overtime must be compensated",
+    "Japan": "Karoshi (death from overwork) recognized; regulations strengthening",
+    "US": "Fair Labor Standards Act requires overtime pay for non-exempt; many loopholes",
+    "Global": "ILO conventions on working hours widely ratified but poorly enforced"
+  },
+
+  "enforcement_in_system": {
+    "detection": "Time tracking with anomaly detection for hours > contract",
+    "prevention": "Smart contract refuses to accept work submissions beyond limit without override",
+    "remediation": "Automatic compensation adjustment when violation detected",
+    "penalty": "Repeat violations trigger @exploitation_threshold and governance review"
+  },
+
+  "sources": [
+    {
+      "citation": "Economic Policy Institute (2021). Wage Theft in the United States.",
+      "tier": "B",
+      "url": "https://www.epi.org/publication/wage-theft-2021/"
+    },
+    {
+      "citation": "WHO/ILO (2021). Long working hours increasing deaths from heart disease and stroke.",
+      "tier": "A",
+      "url": "https://www.who.int/news/item/17-05-2021-long-working-hours-increasing-deaths-from-heart-disease-and-stroke-who-ilo"
+    },
+    {
+      "citation": "Pfeffer, J. (2018). Dying for a Paycheck. HarperBusiness.",
+      "tier": "A",
+      "url": "https://www.harpercollins.com/products/dying-for-a-paycheck-jeffrey-pfeffer"
+    },
+    {
+      "citation": "Pencavel, J. (2014). The Productivity of Working Hours. IZA Discussion Paper No. 8129.",
+      "tier": "A",
+      "url": "https://docs.iza.org/dp8129.pdf"
+    }
+  ]
+}

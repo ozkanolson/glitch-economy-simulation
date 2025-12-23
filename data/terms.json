@@ -1,0 +1,255 @@
+{
+  "_meta": {
+    "type": "terms",
+    "domain": "glitch-economy",
+    "inherits": "dahao-org/core-test-1 v1.0.0",
+    "purpose": "Ensure fair compensation and protection for all contributors through evidence-based economic governance",
+    "description": "Economic and labor vocabulary extending DAHAO Core terms.",
+    "version": "1.0.0",
+    "created": "2024-12-22",
+    "updated": "2024-12-22"
+  },
+  "@labor_capacity": {
+    "version": "1.0.0",
+    "definition": "The capacity to provide value through work, effort, skill, or resource contribution to a collective endeavor.",
+    "indicators": {
+      "direct_labor": [
+        "Hours worked",
+        "Tasks completed",
+        "Output delivered",
+        "Skills applied"
+      ],
+      "compute_contribution": [
+        "GPU cycles provided",
+        "Processing power",
+        "Uptime percentage",
+        "Bandwidth contributed"
+      ],
+      "capital_contribution": [
+        "Funds deployed",
+        "Risk assumed",
+        "Liquidity provided"
+      ]
+    },
+    "confidence_levels": {
+      "HIGH": "Verifiable on-chain or signed proof across multiple metrics",
+      "MEDIUM": "Institutional verification or community attestation",
+      "LOW": "Self-reported with some corroboration",
+      "UNKNOWN": "Insufficient evidence - apply precautionary principle"
+    },
+    "source": "Labor economics and contribution theory"
+  },
+  "@exploitation": {
+    "version": "1.0.0",
+    "definition": "A prolonged state of unfair value extraction where compensation does not match contribution, causing economic harm or deprivation.",
+    "indicators": [
+      "Compensation below contribution value",
+      "Unpaid labor or overtime",
+      "Wage theft",
+      "Benefit denial",
+      "Unsafe working conditions",
+      "Coerced labor",
+      "Algorithmic wage suppression",
+      "Classification abuse (employee vs contractor)"
+    ],
+    "duration": "Systematic rather than isolated incident",
+    "note": "Operational thresholds vary by context; uncertainty triggers @protection_ratchet"
+  },
+  "@fair_compensation": {
+    "version": "1.1.0",
+    "definition": "The economic state where a contributor receives value proportional to their contribution, enabling sustainable participation.",
+    "components": [
+      "Token compensation (GLITCH tokens via streaming payments or block rewards)",
+      "Staking rewards and validator commissions",
+      "Ownership stake proportional to contribution",
+      "Voice in governance proportional to delegated stake"
+    ],
+    "distribution_methods": [
+      "Streaming payments (continuous per-block distribution)",
+      "Block rewards (epoch-based distribution)",
+      "Milestone payments (proposal-approved lump sums)",
+      "Validator commissions (for compute providers)"
+    ],
+    "assessment": "Measured through @exploitation indicators, @five_labor_rights compliance, and contribution metrics."
+  },
+  "@value": {
+    "version": "1.0.0",
+    "definition": "Measurable output or contribution that benefits the collective endeavor.",
+    "categories": [
+      "Labor value (work output)",
+      "Compute value (processing contribution)",
+      "Capital value (investment)",
+      "Governance value (participation in decisions)",
+      "Network value (connections and growth)"
+    ],
+    "measurement": "Defined by domain-specific metrics and community consensus"
+  },
+  "@token": {
+    "version": "1.1.0",
+    "definition": "Native token of the Glitch AppChain, used for value exchange, governance weight, and staking within the system.",
+    "chain_details": {
+      "denom": "uglitch",
+      "display_denom": "GLITCH",
+      "decimals": 6,
+      "module": "x/bank"
+    },
+    "properties": {
+      "transferable": "Can be exchanged between wallet addresses via x/bank MsgSend",
+      "stakeable": "Can be delegated to validators for governance weight via x/staking",
+      "ibc_enabled": "Can be transferred across IBC-connected chains",
+      "non_dilutable": "Per @protection_ratchet, earned tokens cannot be retroactively reduced"
+    },
+    "types": [
+      "Contribution tokens (earned through work, distributed via x/distribution)",
+      "Governance tokens (voting weight via x/gov)",
+      "Staked tokens (delegated to validators)"
+    ]
+  },
+  "@inflation": {
+    "version": "1.0.0",
+    "definition": "Dilution of token value through excessive issuance without corresponding value creation.",
+    "risk_indicators": [
+      "Token supply growth exceeding value creation",
+      "Governance capture for self-serving issuance",
+      "Unfunded promises"
+    ],
+    "protection": "Per @protection_ratchet, inflation cannot retroactively reduce earned value"
+  },
+  "@contribution_indicators": {
+    "version": "1.0.0",
+    "definition": "Measurable markers indicating productive contribution to the system.",
+    "markers": {
+      "on_chain": [
+        "Verified compute cycles",
+        "Signed code commits",
+        "Transaction volume processed"
+      ],
+      "verified": [
+        "Completed deliverables",
+        "Peer attestations",
+        "Quality metrics"
+      ],
+      "self_reported": [
+        "Hours logged",
+        "Activity records"
+      ]
+    },
+    "evidence_hierarchy": "On-chain > Verified > Self-reported"
+  },
+  "@five_labor_rights": {
+    "version": "1.0.0",
+    "definition": "Five fundamental rights for all contributors in the system.",
+    "rights": [
+      {
+        "name": "freedom_from_wage_theft",
+        "description": "Fair and timely compensation for all work performed"
+      },
+      {
+        "name": "freedom_from_unsafe_conditions",
+        "description": "Healthy and safe work environment, physical or digital"
+      },
+      {
+        "name": "freedom_from_exploitation",
+        "description": "No forced labor, excessive hours, coercion, or value extraction without consent"
+      },
+      {
+        "name": "freedom_to_organize",
+        "description": "Right to collective bargaining, representation, and governance participation"
+      },
+      {
+        "name": "freedom_from_discrimination",
+        "description": "Equal treatment and opportunity regardless of background"
+      }
+    ],
+    "source": "ILO Core Labor Standards and modern labor rights frameworks",
+    "evolution_note": "Rights may be extended but not reduced per @protection_asymmetry"
+  },
+  "@stakeholder_profile": {
+    "version": "1.0.0",
+    "definition": "Comprehensive documentation of a stakeholder type's contribution evidence, compensation requirements, and protection status.",
+    "required_fields": [
+      "stakeholder_type",
+      "contribution_evidence",
+      "contribution_capacity_confidence",
+      "compensation_requirements",
+      "sources"
+    ],
+    "optional_fields": [
+      "typical_contribution_patterns",
+      "known_exploitation_vectors",
+      "protection_history"
+    ],
+    "storage": "data/stakeholders/{type}.json"
+  },
+  "@practice": {
+    "version": "1.0.0",
+    "definition": "An economic activity or policy that affects contributor welfare, subject to ethical assessment.",
+    "required_fields": [
+      "name",
+      "description",
+      "target_stakeholders",
+      "economic_impacts",
+      "economic_verdict",
+      "sources"
+    ],
+    "verdict_options": [
+      "ETHICAL",
+      "EXPLOITATIVE",
+      "COMPLEX",
+      "UNKNOWN"
+    ],
+    "storage": "data/practices/{name}.json"
+  },
+  "@economic_verdict": {
+    "version": "1.0.0",
+    "definition": "Assessment of a practice's alignment with labor rights and fair compensation principles.",
+    "options": {
+      "ETHICAL": "Does not violate labor rights; acceptable practice",
+      "EXPLOITATIVE": "Violates one or more labor rights; should be eliminated",
+      "COMPLEX": "Mixed impacts; requires context and mitigation",
+      "UNKNOWN": "Insufficient evidence; apply precautionary principle"
+    },
+    "determination": "Based on @five_labor_rights compliance, @exploitation indicators, and @labor_primacy",
+    "note": "Verdicts are operationalized via @rule_practice_evaluation. Use COMPLEX for mixed-impact cases with mitigation; reserve EXPLOITATIVE for elimination-presumptive cases."
+  },
+  "@economic_impact": {
+    "version": "1.0.0",
+    "definition": "Measurable effects of a practice on contributor welfare and compensation.",
+    "categories": [
+      "Wage/compensation effect",
+      "Working conditions",
+      "Job security",
+      "Benefits and protections",
+      "Power imbalance",
+      "Long-term economic harm"
+    ],
+    "evidence_required": "Claims about economic impact require evidence per @evidence_based"
+  },
+  "@proof_of_useful_work": {
+    "version": "1.1.0",
+    "definition": "Verifiable evidence that a contribution has been made, enabling fair reward allocation via Cosmos governance.",
+    "tiers": {
+      "tier_A_on_chain": {
+        "description": "Cryptographically verifiable on Cosmos chain via transaction hash",
+        "examples": ["GPU compute logs (validator blocks)", "Signed commits (tx memo)", "Transaction processing (block height)"],
+        "verification": "Query via RPC endpoint or block explorer"
+      },
+      "tier_A_signed": {
+        "description": "Digitally signed with wallet key and auditable",
+        "examples": ["Code contributions (signed tx)", "Deliverable submissions (IPFS hash in tx memo)"],
+        "verification": "Verify signature against glitch1... address"
+      },
+      "tier_B": {
+        "description": "Institutionally verified via multi-sig attestation",
+        "examples": ["DAO attestation", "Validator set confirmation"],
+        "verification": "Multi-sig transaction from designated attestors"
+      },
+      "tier_C": {
+        "description": "Self-reported with community attestation via governance vote",
+        "examples": ["Hours logged", "Task completion claims"],
+        "verification": "x/gov proposal with quorum approval"
+      }
+    },
+    "reward_trigger": "Valid proof triggers @reward_allocation via x/distribution or x/bank MsgSend"
+  }
+}

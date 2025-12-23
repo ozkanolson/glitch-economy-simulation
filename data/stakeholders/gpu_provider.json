@@ -1,0 +1,118 @@
+{
+  "_meta": {
+    "type": "stakeholder_profile",
+    "version": "1.0.0",
+    "created": "2024-12-22",
+    "updated": "2024-12-22",
+    "status": "accepted",
+    "proposal": "Initial seed data"
+  },
+
+  "stakeholder_type": "GPU Provider",
+  "description": "Contributors who provide computational resources (GPU cycles, processing power, bandwidth) to the collective endeavor.",
+
+  "taxonomy": {
+    "category": "Compute",
+    "subcategories": [
+      "Individual GPU owner",
+      "Mining farm operator",
+      "Data center operator",
+      "Distributed compute network node"
+    ]
+  },
+
+  "contribution_evidence": {
+    "on_chain_verified": [
+      "GPU cycles logged on blockchain",
+      "Proof-of-work computations verified",
+      "Uptime percentage tracked",
+      "Bandwidth contribution measured"
+    ],
+    "performance_metrics": [
+      "TFLOPS provided",
+      "Jobs completed",
+      "Latency and reliability",
+      "Queue processing speed"
+    ],
+    "infrastructure": [
+      "Hardware specifications",
+      "Power consumption efficiency",
+      "Geographic distribution for redundancy"
+    ]
+  },
+
+  "contribution_capacity_confidence": "HIGH",
+  "contribution_capacity_justification": "Compute contribution is cryptographically verifiable on-chain. Multiple strong indicators with mathematical proof of work.",
+
+  "compensation_requirements": {
+    "freedom_from_token_theft": {
+      "requirement": "All verified compute must receive GLITCH tokens at agreed rate",
+      "minimum": "Cover operational costs plus fair margin in tokens",
+      "distribution_method": "Block rewards via x/staking or streaming payments via x/distribution",
+      "validator_commission": "Configurable commission rate for validator operators"
+    },
+    "freedom_from_unsafe_conditions": {
+      "requirement": "No requirement to run harmful workloads",
+      "includes": ["Right to refuse illegal computation", "Transparency about workload purpose"]
+    },
+    "freedom_from_exploitation": {
+      "requirement": "No extraction of compute without fair token compensation",
+      "transparency": "Clear token pricing for different compute types",
+      "no_lock_in": "Freedom to unbond and exit via x/staking (subject to unbonding period)"
+    },
+    "freedom_to_organize": {
+      "requirement": "Right to collective negotiation on rates via x/gov proposals",
+      "governance_weight": "Proportional to staked GLITCH tokens",
+      "representation": "Vote on validator set and infrastructure decisions"
+    },
+    "freedom_from_discrimination": {
+      "requirement": "Equal treatment regardless of geographic location or scale",
+      "rate_fairness": "Same block reward rate for same compute regardless of provider size"
+    }
+  },
+  "cosmos_integration": {
+    "role": "Validator or Delegator",
+    "staking_module": "x/staking",
+    "reward_module": "x/distribution",
+    "validator_requirements": ["Minimum self-delegation", "Uptime SLA", "Registered glitch1valoper... address"],
+    "commission_range": {"min": "0%", "max": "20%", "max_change_rate": "1% per day"}
+  },
+
+  "typical_contribution_patterns": [
+    "Continuous uptime provision",
+    "Burst capacity on demand",
+    "Scheduled availability windows",
+    "Geographic diversity for redundancy"
+  ],
+
+  "known_exploitation_vectors": [
+    "Underpayment below operational costs",
+    "Delayed payment or token distribution",
+    "Forced workload types without consent",
+    "Network effects creating monopoly pricing",
+    "Hardware wear without depreciation compensation",
+    "Bandwidth theft",
+    "Energy cost externalization"
+  ],
+
+  "protection_status": "PROTECTED",
+  "protection_rationale": "High contribution confidence with on-chain verification; compute infrastructure is essential to system operation",
+
+  "sources": [
+    {
+      "citation": "Cosmos SDK Documentation: Staking Module",
+      "tier": "B",
+      "url": "https://docs.cosmos.network/main/build/modules/staking"
+    },
+    {
+      "citation": "Cosmos SDK Documentation: Distribution Module",
+      "tier": "B",
+      "url": "https://docs.cosmos.network/main/build/modules/distribution"
+    },
+    {
+      "citation": "Tendermint Core: Validators and Consensus",
+      "tier": "B",
+      "url": "https://docs.tendermint.com/main/introduction/what-is-tendermint.html"
+    }
+  ]
+}

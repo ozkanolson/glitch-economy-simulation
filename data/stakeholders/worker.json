@@ -1,0 +1,113 @@
+{
+  "_meta": {
+    "type": "stakeholder_profile",
+    "version": "1.0.0",
+    "created": "2024-12-22",
+    "updated": "2024-12-22",
+    "status": "accepted",
+    "proposal": "Initial seed data"
+  },
+
+  "stakeholder_type": "Worker",
+  "description": "Human contributors who provide labor, skills, time, and expertise to the collective endeavor.",
+
+  "taxonomy": {
+    "category": "Labor",
+    "subcategories": [
+      "Full-time contributor",
+      "Part-time contributor",
+      "Gig worker",
+      "Contractor",
+      "Volunteer"
+    ]
+  },
+
+  "contribution_evidence": {
+    "direct_labor": [
+      "Hours worked (logged, verified, or attested)",
+      "Tasks completed (deliverables, milestones)",
+      "Code commits (signed, verifiable)",
+      "Documentation produced"
+    ],
+    "skill_application": [
+      "Expertise applied to problems",
+      "Mentoring and knowledge transfer",
+      "Quality of output (peer review)"
+    ],
+    "coordination": [
+      "Project management",
+      "Communication facilitation",
+      "Conflict resolution"
+    ]
+  },
+
+  "contribution_capacity_confidence": "HIGH",
+  "contribution_capacity_justification": "Human labor is the foundation of all value creation. Multiple strong indicators across direct output, skill application, and coordination.",
+
+  "compensation_requirements": {
+    "freedom_from_token_theft": {
+      "requirement": "All work must be compensated in GLITCH tokens at or above agreed rate",
+      "minimum": "Sustainable contribution rate for full-time equivalent",
+      "distribution_method": "Streaming payments (per-block) or milestone-based via x/bank",
+      "wallet_requirement": "Contributor must have registered glitch1... wallet address"
+    },
+    "freedom_from_unsafe_conditions": {
+      "requirement": "Safe physical and digital work environment",
+      "includes": ["Ergonomic considerations", "Mental health support", "Harassment-free environment"]
+    },
+    "freedom_from_exploitation": {
+      "requirement": "No coerced labor, excessive hours, or value extraction without consent",
+      "maximum_hours": "Reasonable limits with additional token compensation for overtime",
+      "transparency": "Clear terms of engagement recorded on-chain or in governance"
+    },
+    "freedom_to_organize": {
+      "requirement": "Right to collective voice and governance participation via x/gov",
+      "governance_weight": "Proportional to staked GLITCH tokens and contribution history",
+      "representation": "Access to proposal submission and voting"
+    },
+    "freedom_from_discrimination": {
+      "requirement": "Equal treatment regardless of background",
+      "hiring": "Merit-based evaluation",
+      "compensation": "Equal token distribution for equal contribution"
+    }
+  },
+
+  "typical_contribution_patterns": [
+    "Consistent daily/weekly labor",
+    "Project-based deliverables",
+    "On-call availability",
+    "Expertise consultation"
+  ],
+
+  "known_exploitation_vectors": [
+    "Unpaid overtime",
+    "Token theft (delayed or reduced distribution)",
+    "Misclassification (contributor as non-stakeholder)",
+    "Algorithmic suppression of token allocation",
+    "Gig economy instability",
+    "Non-compete clauses restricting mobility",
+    "Intellectual property appropriation",
+    "Burnout from overwork"
+  ],
+
+  "protection_status": "PROTECTED",
+  "protection_rationale": "High contribution confidence; labor is foundational to system value creation",
+
+  "sources": [
+    {
+      "citation": "ILO Declaration on Fundamental Principles and Rights at Work (1998, amended 2022)",
+      "tier": "B",
+      "url": "https://www.ilo.org/declaration/lang--en/index.htm"
+    },
+    {
+      "citation": "Standing, G. (2011). The Precariat: The New Dangerous Class. Bloomsbury Academic.",
+      "tier": "A",
+      "url": "https://www.bloomsbury.com/us/precariat-9781849664561/"
+    },
+    {
+      "citation": "Rosenblat, A. (2018). Uberland: How Algorithms Are Rewriting the Rules of Work. University of California Press.",
+      "tier": "A",
+      "url": "https://www.ucpress.edu/book/9780520298576/uberland"
+    }
+  ]
+}

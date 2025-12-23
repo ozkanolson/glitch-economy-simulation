@@ -1,0 +1,173 @@
+{
+  "_meta": {
+    "type": "governance",
+    "domain": "glitch-economy",
+    "inherits": "dahao-org/core-test-1 v1.0.0",
+    "description": "Governance configuration for DAHAO Glitch Economy domain - decentralized labor and economic governance.",
+    "version": "1.0.0",
+    "created": "2024-12-22",
+    "updated": "2024-12-22"
+  },
+  "instance": {
+    "id": "glitch-economy",
+    "name": "DAHAO Glitch Economy",
+    "type": "domain",
+    "purpose": "Ensure fair compensation and protection for all contributors through evidence-based economic governance",
+    "repository": "https://github.com/dahao-org/glitch-economy",
+    "core_dependency": "https://github.com/dahao-org/core-test-1",
+    "core_version": "1.0.0",
+    "created": "2024-12-22",
+    "maintainers": [
+      {
+        "id": "dahao-org",
+        "type": "organization",
+        "github": "dahao-org",
+        "role": "steward"
+      }
+    ]
+  },
+  "versioning": {
+    "current": {
+      "terms": "1.0.0",
+      "principles": "1.0.0",
+      "rules": "1.0.0",
+      "governance": "1.0.0"
+    },
+    "core_inherited": "1.0.0"
+  },
+  "consensus": {
+    "note": "Inherits core thresholds, with domain-specific additions",
+    "inherits": "dahao-org/core governance.consensus",
+    "domain_additions": {
+      "stakeholder_addition": 0.66,
+      "stakeholder_modification": 0.66,
+      "stakeholder_removal": 0.99,
+      "practice_addition": 0.66,
+      "practice_modification": 0.66,
+      "practice_verdict_change": 0.75,
+      "treasury_distribution": 0.66,
+      "reward_allocation": 0.66,
+      "token_issuance": 0.75
+    }
+  },
+  "timing": {
+    "discussion_minimum_days": {
+      "term": 0.003,
+      "rule": 0.005,
+      "principle": 0.01,
+      "treasury": 0.007
+    },
+    "voting_minimum_days": {
+      "term": 0.002,
+      "rule": 0.002,
+      "principle": 0.005,
+      "treasury": 0.003
+    }
+  },
+  "automation": {
+    "inherits": "dahao-org/core governance.automation",
+    "domain_additions": {
+      "auto_contribution_check": true,
+      "auto_five_rights_check": true,
+      "llm_research_allowed": true,
+      "llm_proposal_drafting_allowed": true,
+      "auto_execute_approved_proposals": true
+    }
+  },
+  "locked_items": {
+    "inherits_from_core": [
+      "@purpose_primacy",
+      "@democratic_evolution",
+      "@transparency",
+      "@precautionary_default",
+      "@protection_asymmetry",
+      "@inheritance_integrity"
+    ],
+    "domain_locked_principles": [
+      "@protection_ratchet",
+      "@labor_primacy",
+      "@contribution_axiom"
+    ],
+    "domain_locked_rules": [],
+    "domain_locked_terms": []
+  },
+  "knowledge_base": {
+    "stakeholders_directory": "data/stakeholders/",
+    "practices_directory": "data/practices/",
+    "schema_validation": true,
+    "auto_versioning": true
+  },
+  "contribution_requirements": {
+    "stakeholder_proposal": {
+      "required_fields": [
+        "stakeholder_type",
+        "contribution_evidence",
+        "compensation_requirements",
+        "sources"
+      ],
+      "minimum_evidence_tier": "C",
+      "minimum_sources": 1
+    },
+    "practice_proposal": {
+      "required_fields": [
+        "name",
+        "target_stakeholders",
+        "economic_impacts",
+        "sources"
+      ],
+      "minimum_evidence_tier": "C",
+      "minimum_sources": 1
+    }
+  },
+  "chain_info": {
+    "engine": "cosmos-sdk",
+    "chain_id": "glitch-1",
+    "bech32_prefix": "glitch",
+    "denom": "uglitch",
+    "display_denom": "GLITCH",
+    "decimals": 6,
+    "rpc_endpoint": "http://localhost:26657",
+    "api_endpoint": "http://localhost:1317",
+    "grpc_endpoint": "localhost:9090"
+  },
+  "cosmos_modules": {
+    "governance": "x/gov",
+    "bank": "x/bank",
+    "distribution": "x/distribution",
+    "staking": "x/staking",
+    "auth": "x/auth"
+  },
+  "treasury": {
+    "module_account": "glitch1qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq5evf0n",
+    "distribution_module": "x/distribution",
+    "governance_controlled": true,
+    "distribution_logic": "proportional_to_contribution"
+  },
+  "ibc": {
+    "enabled": true,
+    "channels": [],
+    "transfer_module": "x/ibc-transfer"
+  },
+  "enactment": {
+    "auto_execute_approved_proposals": true,
+    "enactment_modes": {
+      "file_change": "Traditional git-based changes to JSON/MD files",
+      "cosmos_tx": "Execute on-chain transaction via x/bank MsgSend"
+    },
+    "proposal_types_on_chain": [
+      "@reward_allocation",
+      "@treasury_distribution",
+      "@stake_adjustment"
+    ]
+  },
+  "proof_of_useful_work": {
+    "enabled": true,
+    "evidence_tiers": {
+      "tier_A_on_chain": "Verifiable compute contribution (GPU cycles logged on chain)",
+      "tier_A_signed": "Verifiable code commits (signed commits with proof)",
+      "tier_B": "Institutional verification of contribution",
+      "tier_C": "Self-reported with community attestation"
+    },
+    "reward_trigger": "Validated contribution triggers automatic @reward_allocation"
+  }
+}

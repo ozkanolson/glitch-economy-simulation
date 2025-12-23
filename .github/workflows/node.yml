@@ -1,0 +1,42 @@
+name: Glitch Governance Node
+
+on:
+  # Run every 6 hours
+  schedule:
+    - cron: '0 */6 * * *'
+
+  # Allow manual trigger from GitHub Actions UI
+  workflow_dispatch:
+
+  # Also run on push to main for testing
+  push:
+    branches:
+      - main
+    paths:
+      - 'src/node.py'
+      - 'data/principles.json'
+      - '.github/workflows/node.yml'
+
+jobs:
+  vote:
+    name: Analyze & Vote on Proposals
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Run Governance Node
+        run: python src/node.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          WALLET_ADDRESS: ${{ secrets.WALLET_ADDRESS }}

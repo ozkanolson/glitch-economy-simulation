@@ -1,0 +1,129 @@
+{
+  "_meta": {
+    "type": "stakeholder_profile",
+    "version": "1.0.0",
+    "created": "2024-12-22",
+    "updated": "2024-12-22",
+    "status": "accepted",
+    "proposal": "Initial seed data"
+  },
+
+  "stakeholder_type": "Investor / Capital Provider",
+  "description": "Contributors who provide financial capital, liquidity, or risk-bearing capacity to the collective endeavor.",
+
+  "taxonomy": {
+    "category": "Capital",
+    "subcategories": [
+      "Individual investor",
+      "Institutional investor",
+      "Liquidity provider",
+      "Grant provider",
+      "Crowdfunding participant"
+    ]
+  },
+
+  "contribution_evidence": {
+    "capital_deployed": [
+      "GLITCH tokens transferred (verifiable via tx hash on chain)",
+      "Liquidity provided to IBC pools",
+      "Tokens staked/delegated via x/staking"
+    ],
+    "risk_bearing": [
+      "Duration of token lock-up (unbonding period)",
+      "Risk tier of investment",
+      "Loss absorption in downturns"
+    ],
+    "facilitation": [
+      "Network connections enabled",
+      "Strategic guidance provided",
+      "Credibility lending"
+    ]
+  },
+
+  "contribution_capacity_confidence": "HIGH",
+  "contribution_capacity_justification": "Capital contribution is verifiable through transaction records. However, capital alone does not create value without labor application.",
+
+  "compensation_requirements": {
+    "freedom_from_token_theft": {
+      "requirement": "Staking rewards and returns as agreed in transparent on-chain terms",
+      "note": "Returns are contingent on system success, not guaranteed",
+      "distribution_method": "Staking rewards via x/distribution or governance-approved distributions"
+    },
+    "freedom_from_unsafe_conditions": {
+      "requirement": "Protection from fraud and misrepresentation",
+      "includes": ["On-chain auditable operations", "Transparent governance", "No hidden risks"]
+    },
+    "freedom_from_exploitation": {
+      "requirement": "No extraction of staked tokens without agreed terms",
+      "constraint": "Capital cannot demand disproportionate governance control",
+      "limit": "Returns capped per @protection_ratchet to prevent elite accumulation"
+    },
+    "freedom_to_organize": {
+      "requirement": "Right to investor representation in x/gov governance",
+      "governance_weight": "Proportional to staked GLITCH BUT capped to prevent capital dominance",
+      "constraint": "Capital votes cannot exceed labor votes in aggregate"
+    },
+    "freedom_from_discrimination": {
+      "requirement": "Equal treatment regardless of delegation size within tier",
+      "access": "Same on-chain information rights for all investors"
+    }
+  },
+  "cosmos_integration": {
+    "role": "Delegator or Liquidity Provider",
+    "staking_module": "x/staking",
+    "reward_module": "x/distribution",
+    "ibc_module": "x/ibc-transfer",
+    "delegation_requirements": ["Registered glitch1... wallet address", "Minimum delegation amount"],
+    "unbonding_period": "21 days (configurable via governance)"
+  },
+
+  "typical_contribution_patterns": [
+    "Initial capital deployment",
+    "Ongoing liquidity provision",
+    "Emergency capital infusion",
+    "Long-term strategic investment"
+  ],
+
+  "known_exploitation_vectors": {
+    "by_investors": [
+      "Governance capture (voting power > contribution)",
+      "Disproportionate returns at labor's expense",
+      "Short-term extraction over long-term building",
+      "Information asymmetry exploitation",
+      "Forced liquidation for quick returns"
+    ],
+    "of_investors": [
+      "Fraud and misrepresentation",
+      "Rug pulls and exit scams",
+      "Dilution without consent",
+      "Hidden fees and costs"
+    ]
+  },
+
+  "protection_status": "PROTECTED",
+  "protection_rationale": "Capital contribution is verifiable and necessary for system growth. However, protection is constrained by @protection_ratchet to prevent capital from dominating labor.",
+
+  "special_constraints": [
+    "Per @protection_ratchet: Capital returns cannot retroactively reduce labor compensation",
+    "Per @labor_primacy: Capital governance weight cannot exceed labor governance weight",
+    "Per @proportionality: Investor returns must be proportional to actual risk, not negotiating power"
+  ],
+
+  "sources": [
+    {
+      "citation": "Piketty, T. (2014). Capital in the Twenty-First Century. Harvard University Press.",
+      "tier": "A",
+      "url": "https://www.hup.harvard.edu/catalog.php?isbn=9780674430006"
+    },
+    {
+      "citation": "Mazzucato, M. (2018). The Value of Everything: Making and Taking in the Global Economy. PublicAffairs.",
+      "tier": "A",
+      "url": "https://www.publicaffairsbooks.com/titles/mariana-mazzucato/the-value-of-everything/9781610396745/"
+    },
+    {
+      "citation": "Scholz, T. (2016). Platform Cooperativism: Challenging the Corporate Sharing Economy.",
+      "tier": "B",
+      "url": "https://rosalux.nyc/platform-cooperativism-2/"
+    }
+  ]
+}
