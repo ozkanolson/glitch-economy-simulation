@@ -142,5 +142,29 @@
     "stance": "Economic Stability",
     "description": "This fork emphasizes system stability, sustainable growth, and balanced stakeholder interests.",
     "bias": "In ambiguous situations, interpretations favor long-term stability over rapid changes."
+  },
+  "@constructive_stewardship": {
+    "version": "1.0.0",
+    "definition": "The normative expectation that participants who are aligned with shared values will engage constructively in governance processes, contributing substantive observations, concerns, or improvements through the dialectic process rather than remaining passive.",
+    "nature": "normative_guidance",
+    "locked": false,
+    "uses_terms": [
+      "@dialectic",
+      "@good_faith",
+      "@continuous_improvement",
+      "@democratic_evolution"
+    ],
+    "rationale": "Alignment without participation leaves improvement opportunities undiscovered. Constructive engagement strengthens collective deliberation.",
+    "implications": [
+      "Aligned participants are encouraged to identify gaps and propose improvements",
+      "Quality of contribution matters more than quantity",
+      "Silence when one has relevant insight is a missed opportunity, not a violation",
+      "This expectation is cultural, not enforced - it shapes norms, not rules"
+    ],
+    "relationship_to_existing": {
+      "@good_faith": "Extends good faith from assumption about others to expectation of self",
+      "@continuous_improvement": "Provides the participatory mechanism for continuous improvement",
+      "@democratic_evolution": "Enriches democratic evolution through active rather than passive consent"
+    }
   }
 }
