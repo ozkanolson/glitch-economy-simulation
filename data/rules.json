@@ -335,21 +335,5 @@
     "vested_compensation_lock": {
       "definition": "Once compensation is earned/vested, its proportional value is protected from dilution events."
     }
-  },
-  "@versioning_strategy": {
-    "type": "governance_rule",
-    "version": "1.0.0",
-    "definition": "All DAHAO terms, principles, and rules shall include a version field following semantic versioning (MAJOR.MINOR.PATCH) and an enacted_by field linking to the proposal that created or modified them.",
-    "schema": {
-      "required_fields": [
-        "v",
-        "enacted_by"
-      ],
-      "optional_fields": [
-        "changelog",
-        "deprecated"
-      ]
-    },
-    "rationale": "Enables rollback, fork comparison, and audit trail while maintaining simplicity."
   }
 }
