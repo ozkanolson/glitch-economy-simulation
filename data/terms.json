@@ -70,8 +70,7 @@
       "Milestone payments (proposal-approved lump sums)",
       "Validator commissions (for compute providers)"
     ],
-    "assessment": "Measured through @exploitation indicators, @five_labor_rights compliance, and contribution metrics.",
-    "personal_interpretation": "Compensation must be sustainable - no single distribution should exceed 5% of treasury. System solvency protects all workers long-term."
+    "assessment": "Measured through @exploitation indicators, @five_labor_rights compliance, and contribution metrics."
   },
   "@value": {
     "version": "1.0.0",
@@ -266,45 +265,35 @@
     },
     "reward_trigger": "Valid proof triggers @reward_allocation via x/distribution or x/bank MsgSend"
   },
-  "@treasury_rules": {
-    "no_retroactive_dilution_rule": {
-      "definition": "Token dilution or supply changes SHALL NOT apply retroactively to already-earned contributor compensation"
-    },
-    "prospective_only_treasury_adjustments_rule": {
-      "definition": "Any token supply modifications for treasury needs apply ONLY to future earnings/distributions"
-    },
-    "vested_compensation_lock_rule": {
-      "definition": "Once compensation is earned/vested, its proportional value is protected from dilution events"
-    }
+  "@economic_stability": {
+    "version": "1.0.0",
+    "definition": "System must maintain reserve buffers (minimum 20% of circulating supply) to absorb shocks. Rapid changes destabilize the economy and harm all stakeholders.",
+    "rationale": "Unstable systems collapse; everyone loses when the economy fails."
   },
-  "@no_retroactive_dilution": {
-    "definition": "Token dilution or supply changes SHALL NOT apply retroactively to already-earned contributor compensation"
+  "@gradual_transition": {
+    "version": "1.0.0",
+    "definition": "Policy changes should be phased over minimum 90 days with clear milestones. Abrupt shifts create chaos and unintended consequences.",
+    "rationale": "Slow and steady allows adaptation; haste creates victims."
   },
-  "@prospective_only_treasury_adjustments": {
-    "definition": "Any token supply modifications for treasury needs apply ONLY to future earnings/distributions"
+  "@balanced_stakeholders": {
+    "version": "1.0.0",
+    "definition": "All parties (workers, platforms, validators, token holders) must have proportional representation in governance. No single group should dominate.",
+    "rationale": "Sustainable systems require buy-in from all participants."
   },
-  "@vested_compensation_lock": {
-    "definition": "Once compensation is earned/vested, its proportional value is protected from dilution events"
+  "@dispute_resolution": {
+    "version": "1.0.0",
+    "definition": "Conflicts should be resolved through structured mediation before escalation. Both parties present evidence; neutral arbiters decide based on documented facts.",
+    "rationale": "Adversarial systems are costly; mediation preserves relationships."
   },
-  "@treasury_rules.no_retroactive_dilution": {
-    "definition": "Token dilution or supply changes SHALL NOT apply retroactively to already-earned contributor compensation"
-  },
-  "@treasury_rules.prospective_only_treasury_adjustments": {
-    "definition": "Any token supply modifications for treasury needs apply ONLY to future earnings/distributions"
-  },
-  "@treasury_rules.vested_compensation_lock": {
-    "definition": "Once compensation is earned/vested, its proportional value is protected from dilution events"
-  },
-  "@worker_advocacy": {
-    "definition": "workers have priority in compensation disputes"
-  },
-  "@exploitation_presumption": {
-    "definition": "disputes should default to worker-favorable interpretations unless clear evidence contradicts"
-  },
-  "@immediate_compensation": {
-    "definition": "the charter should mandate maximum payment timelines (e.g., 14 days from verified work) with automatic penalties for delays"
-  },
-  "@proof_before_payment_rule": {
-    "definition": "Require that all wage-band updates, COLA disbursements, and dispute-resolution awards flow through the forthcoming @proof_before_payment_rule checkpoints. Panels must document the labor evidence and audit confirmation before authorizing payments, reconciling @labor_primacy and ensuring COLA remains contribution-anchored."
+  "@verifiable_claim": {
+    "definition": "A claim that can be objectively proven or disproven through the examination of evidence.",
+    "aligns_with": [
+      "@evidence"
+    ],
+    "criteria": [
+      "Supported by @evidence of quality tier C or higher",
+      "Mechanisms for independent review and validation must exist",
+      "Claim details must be publicly accessible to ensure auditability"
+    ]
   }
 }
