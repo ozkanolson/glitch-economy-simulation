@@ -142,5 +142,32 @@
     "stance": "Economic Stability",
     "description": "This fork emphasizes system stability, sustainable growth, and balanced stakeholder interests.",
     "bias": "In ambiguous situations, interpretations favor long-term stability over rapid changes."
+  },
+  "@worker_protection_presumption": {
+    "version": "1.0.0",
+    "statement": "In compensation disputes where documented information asymmetry exists, initial burden of proof shifts to the party with greater access to relevant evidence.",
+    "locked": false,
+    "uses_terms": [
+      "@fair_compensation",
+      "@evidence_based",
+      "@proportionality",
+      "@individual_consideration"
+    ],
+    "conditions": {
+      "scope": "Compensation disputes between workers and platforms/employers",
+      "trigger": "Demonstrated information asymmetry regarding work records, compensation data, or contractual terms",
+      "standard": "Rebuttable by preponderance of evidence from the advantaged party"
+    },
+    "rationale": "Structural power imbalances affect evidence access. True evidence-based decisions must account for who controls documentation. This principle operationalizes @individual_consideration in compensation contexts.",
+    "safeguards": [
+      "Presumption is rebuttable, not absolute",
+      "Applies only when asymmetry is demonstrated, not assumed",
+      "Subject to @proportionality - severity of remedy matches severity of demonstrated harm",
+      "Does not apply to disputes where both parties have equal evidence access"
+    ],
+    "examples": {
+      "applies": "Worker claims unpaid hours but platform controls time-tracking logs worker cannot access",
+      "does_not_apply": "Dispute over publicly visible contribution metrics on blockchain"
+    }
   }
 }
