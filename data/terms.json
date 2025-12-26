@@ -373,7 +373,8 @@
     "aligns_with": [
       "@protection_asymmetry",
       "@precautionary_default",
-      "@good_faith"
+      "@good_faith",
+      "@dialectic"
     ]
   },
   "@timely_compensation": {
